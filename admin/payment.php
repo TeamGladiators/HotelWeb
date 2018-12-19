@@ -171,6 +171,24 @@ if(!isset($_SESSION["user"]))
 											}
 										
 										}
+					           
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                </div>
+            </div>
+                <!-- /. ROW  -->
+            
+                </div>
+               
+            </div>
+        
+               
+    </div>
                     
 
       
