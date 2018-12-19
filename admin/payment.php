@@ -79,6 +79,49 @@ if(!isset($_SESSION["user"]))
                     <li>
                         <a href="logout.php" ><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                     </li>
+			
+			 </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+			 <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header">
+                           Payment Details<small> </small>
+                        </h1>
+                    </div>
+                </div> 
+                 <!-- /. ROW  -->
+				 
+				 
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+											<th>Room type</th>
+                                            <th>Bed Type</th>
+                                            <th>Check in</th>
+											<th>Check out</th>
+											<th>No of Room</th>
+											<th>Meal Type</th>
+											
+                                            <th>Room Rent</th>
+											<th>Bed Rent</th>
+											<th>Meals </th>
+											<th>Gr.Total</th>
+											<th>Print</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
                     
 
       
