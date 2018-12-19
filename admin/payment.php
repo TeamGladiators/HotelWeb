@@ -149,6 +149,28 @@ if(!isset($_SESSION["user"]))
 													<td><a href=print.php?pid=".$id ." <button class='btn btn-primary'> <i class='fa fa-print' ></i> Print</button></td>
 													</tr>";
 											}
+											
+											else
+											{
+												echo"<tr class='gradeU'>
+													<td>".$row['title']." ".$row['fname']." ".$row['lname']."</td>
+													<td>".$row['troom']."</td>
+													<td>".$row['tbed']."</td>
+													<td>".$row['cin']."</td>
+													<td>".$row['cout']."</td>
+													<td>".$row['nroom']."</td>
+													<td>".$row['meal']."</td>
+													
+													<td>".$row['ttot']."</td>
+													<td>".$row['mepr']."</td>
+													<td>".$row['btot']."</td>
+													<td>".$row['fintot']."</td>
+													<td><a href=print.php?pid=".$id ." <button class='btn btn-primary'> <i class='fa fa-print' ></i> Print</button></td>
+													</tr>";
+											
+											}
+										
+										}
                     
 
       
