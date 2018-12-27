@@ -215,4 +215,27 @@ tr:hover .cut { opacity: 1; }
 
 	$pid = $_GET['pid'];
 	
+	$sql ="select * from payment where id = '$pid' ";
+	$re = mysqli_query($con,$sql);
+	while($row=mysqli_fetch_array($re))
+	{
+		$id = $row['id'];
+		$title = $row['title'];
+		$fname = $row['fname'];
+		$lname = $row['lname'];
+		$troom = $row['troom'];
+		$bed = $row['tbed'];
+		$nroom = $row['nroom'];
+		$cin = $row['cin'];
+		$cout = $row['cout'];
+		$meal = $row['meal'];
+		$ttot = $row['ttot'];
+		$mepr = $row['mepr'];
+		$btot = $row['btot'];
+		$fintot = $row['fintot'];
+		$days = $row['noofdays'];
+		
+		
+		
 	
+	}
