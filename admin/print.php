@@ -355,3 +355,45 @@ tr:hover .cut { opacity: 1; }
 					</tr>
 				</tbody>
 			</table>
+			<table class="balance">
+				<tr>
+					<th><span >Total</span></th>
+					<td><span data-prefix>$</span><span><?php echo $fintot; ?></span></td>
+				</tr>
+				<tr>
+					<th><span >Amount Paid</span></th>
+					<td><span data-prefix>$</span><span >0.00</span></td>
+				</tr>
+				<tr>
+					<th><span >Balance Due</span></th>
+					<td><span data-prefix>$</span><span><?php echo $fintot; ?></span></td>
+				</tr>
+			</table>
+		</article>
+		<aside>
+			<h1><span >Contact us</span></h1>
+			<div >
+				<p align="center">Email :- HotelDeMartin@info.com || Web :- www.HotelDeMartin.com || Phone :- +01703493394 </p>
+			</div>
+		</aside>
+	</body>
+</html>
+<?php
+$free="Free";
+$nul = null;
+$rpsql = "UPDATE `room` SET `place`='$free',`cusid`='$nul' where `cusid`='$id'";
+if(mysqli_query($con,$rpsql))
+{
+	$delsql= "DELETE FROM `roombook` WHERE id='$id' ";
+	
+	if(mysqli_query($con,$delsql))
+	{
+	
+	}
+}
+?>
+<?php 
+
+ob_end_flush();
+
+?>
