@@ -72,4 +72,29 @@ if(!isset($_SESSION["user"]))
 					<li>
                         <a href="roombook.php"><i class="fa fa-bar-chart-o"></i>Room Booking</a>
                     </li>
+                    <li>  <a class="active-menu" href="payment.php"><i class="fa fa-qrcode"></i> Payment</a>
+                    </li>
                     <li>
+                        <a  href="profit.php"><i class="fa fa-qrcode"></i> Profit</a>
+                    </li>
+                    <li>
+                        <a href="logout.php" ><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                    
+
+                    
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+			 <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header">
+                           Payment Details<small> </small>
+                        </h1>
+                    </div>
+                </div> 
+                 <!-- /. ROW  -->
+			    
