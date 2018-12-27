@@ -123,4 +123,29 @@ $rre=mysqli_query($con,$rsql);
 												?>
                                                 
                                             </select>
+				       </div>
+							  
+								
+							 <input type="submit" name="del" value="Delete Room" class="btn btn-primary"> 
+							</form>
+							<?php
+							 include('db.php');
+							 
+							 if(isset($_POST['del']))
+							 {
+								$did = $_POST['id'];
+								
+								
+								$sql ="DELETE FROM `room` WHERE id = '$did'" ;
+								if(mysqli_query($con,$sql))
+								{
+								 echo '<script type="text/javascript">alert("Delete the Room") </script>' ;
+										
+										header("Location: roomdel.php");
+								}else {
+									echo '<script>alert("Sorry ! Check The System") </script>' ;
+								}
+							 }
+							
+							?>
              
