@@ -148,4 +148,19 @@ $rre=mysqli_query($con,$rsql);
 							 }
 							
 							?>
+								?>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                  
+           <?php
+						include ('db.php');
+						$sql = "select * from room";
+						$re = mysqli_query($con,$sql)
+				?>
+                <div class="row">
+				
+				
              
