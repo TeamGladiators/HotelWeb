@@ -54,3 +54,22 @@ if(!isset($_SESSION["user"]))
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
+			  </li>
+                <!-- /.dropdown -->
+            </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a href="home.php"><i class="fa fa-dashboard"></i> Status</a>
+                    </li>
+                    <li>
+                        <a  href="messages.php"><i class="fa fa-desktop"></i> News Letters</a>
+                    </li>
+					<li>
+                        <a href="roombook.php"><i class="fa fa-bar-chart-o"></i>Room Booking</a>
+                    </li>
+                    <li>
