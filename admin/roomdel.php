@@ -60,4 +60,67 @@ $rre=mysqli_query($con,$rsql);
 					
                     <!-- /.dropdown-user -->
                 </li>
+		             <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a  href="settings.php"><i class="fa fa-dashboard"></i>Room Status</a>
+                    </li>
+					<li>
+                        <a   href="room.php"><i class="fa fa-plus-circle"></i>Add Room</a>
+                    </li>
+                    <li>
+                        <a  class="active-menu" href="roomdel.php"><i class="fa fa-pencil-square-o"></i> Delete Room</a>
+                    </li>
+					
+
+                    
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+       
+        
+       
+        <div id="page-wrapper" >
+            <div id="page-inner">
+			 <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header">
+                           DELETE ROOM <small></small>
+                        </h1>
+                    </div>
+                </div> 
+                 
+                                 
+            <div class="row">
+                
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                           Delete room
+                        </div>
+                        <div class="panel-body">
+						<form name="form" method="post">
+                            <div class="form-group">
+                                            <label>Select the Room ID *</label>
+                                            <select name="id"  class="form-control" required>
+												<option value selected ></option>
+												<?php
+												while($rrow=mysqli_fetch_array($rre))
+												{
+												$value = $rrow['id'];
+												 echo '<option value="'.$value.'">'.$value.'</option>';
+												
+												}
+												?>
+                                                
+                                            </select>
              
