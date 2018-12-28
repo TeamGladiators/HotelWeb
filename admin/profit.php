@@ -169,4 +169,19 @@ if(!isset($_SESSION["user"]))
 													<td>".$row['cin']."</td>
 													<td>".$row['cout']."</td>
 													
-				
+				else
+											{
+												echo"<tr class='gradeU'>
+													<td>".$row['id']." </td>
+													<td>".$row['title']." ".$row['fname']." ".$row['lname']."</td>
+													
+													<td>".$row['cin']."</td>
+													<td>".$row['cout']."</td>
+													
+													
+													<td>$".$row['ttot']."</td>
+													<td>$".$row['mepr']."</td>
+													<td>$".$row['btot']."</td>
+													<td>$".$row['fintot']."</td>
+													<td>$".$row['fintot']*10/100 ."</td>
+													</tr>";
