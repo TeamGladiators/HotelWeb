@@ -193,7 +193,13 @@ if(!isset($_SESSION["user"]))
 													<td>$".$row['fintot']*10/100 ."</td>
 													</tr>";
 											}
-else
+else<td>$".$row['ttot']."</td>
+													<td>$".$row['mepr']."</td>
+													<td>$".$row['btot']."</td>
+													<td>$".$row['fintot']."</td>
+													<td>$".$row['fintot']*10/100 ."</td>
+													</tr>";
+											
 {										
 												echo"<tr class='gradeU'>
 													<td>".$row['id']." </td>
