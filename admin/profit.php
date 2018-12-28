@@ -125,4 +125,30 @@ if(!isset($_SESSION["user"]))
 					$chart_data = substr($chart_data, 0, -2);
 				
 ?>
+		    <br>
+				<br>
+				<br>
+				<br><div id="chart"></div>
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+											<th>ID</th>
+                                            <th>Name</th>
+                                            <th>Check in</th>
+											<th>Check out</th>
+                                            <th>Room Rent</th>
+											<th>Bed Rent</th>
+											<th>Meals </th>
+											<th>Gr.Total</th>
+											<th>Profit</th>
+											
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 				
