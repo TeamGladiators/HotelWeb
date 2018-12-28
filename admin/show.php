@@ -140,3 +140,19 @@ tr:hover .cut { opacity: 1; }
 	span:empty { display: none; }
 	.add, .cut { display: none; }
 }
+			@page { margin: 0; }
+		</style>
+		
+	</head>
+	<body>
+	
+	
+	
+	
+	<?php
+	ob_start();	
+	include ('db.php');
+
+	$pid = $_GET['sid'];
+	
+	
