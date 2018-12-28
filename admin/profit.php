@@ -185,3 +185,11 @@ if(!isset($_SESSION["user"]))
 													<td>$".$row['fintot']."</td>
 													<td>$".$row['fintot']*10/100 ."</td>
 													</tr>";
+														
+													<td>$".$row['ttot']."</td>
+													<td>$".$row['mepr']."</td>
+													<td>$".$row['btot']."</td>
+													<td>$".$row['fintot']."</td>
+													<td>$".$row['fintot']*10/100 ."</td>
+													</tr>";
+											}
