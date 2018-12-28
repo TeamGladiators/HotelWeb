@@ -209,3 +209,23 @@ tr:hover .cut { opacity: 1; }
 				
 			</table>
 			<table >
+				
+					<tr> 
+						<td>Customer phone : -  <?php echo $phone; ?> </td>
+						
+						<td>Customer email : -  <?php echo $email; ?> </td>
+					</tr>
+					<tr> 
+						<td>Customer Country : -  <?php echo $country; ?> </td>
+						<td>Customer National : -  <?php echo $National; ?> </td>
+					</tr>
+				</table>
+				<br>
+				<br>
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th><span >Item</span></th>
+						<th><span >No of Days</span></th>
+						
+					</tr>
