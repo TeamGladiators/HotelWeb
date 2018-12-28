@@ -95,3 +95,18 @@ table.inventory td:nth-child(5) { text-align: right; width: 12%; }
 
 table.balance th, table.balance td { width: 50%; }
 table.balance td { text-align: right; }
+side h1 { border: none; border-width: 0 0 1px; margin: 0 0 1em; }
+aside h1 { border-color: #999; border-bottom-style: solid; }
+
+/* javascript */
+
+.add, .cut
+{
+	border-width: 1px;
+	display: block;
+	font-size: .8rem;
+	padding: 0.25em 0.5em;	
+	float: left;
+	text-align: center;
+	width: 0.6em;
+}
