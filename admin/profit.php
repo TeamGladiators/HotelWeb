@@ -151,4 +151,22 @@ if(!isset($_SESSION["user"]))
                                         </tr>
                                     </thead>
                                     <tbody>
+					    
+									<?php
+										
+										$sql="select * from payment";
+										$re = mysqli_query($con,$sql);
+										while($row = mysqli_fetch_array($re))
+										{
+										
+											$id = $row['id'];
+											
+											if($id % 2 ==1 )
+											{
+												echo"<tr class='gradeC'>
+													<td>".$row['id']." </td>
+													<td>".$row['title']." ".$row['fname']." ".$row['lname']."</td>
+													<td>".$row['cin']."</td>
+													<td>".$row['cout']."</td>
+													
 				
