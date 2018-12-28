@@ -254,4 +254,16 @@ else<td>$".$row['ttot']."</td>
     </script>
          <!-- Custom Js -->
     <script src="assets/js/custom-scripts.js"></script>
-    
+    </body>
+</html>
+<script>
+Morris.Bar({
+ element : 'chart',
+ data:[<?php echo $chart_data; ?>],
+ xkey:'date',
+ ykeys:['profit'],
+ labels:['Profit'],
+ hideHover:'auto',
+ stacked:true
+});
+</script>
