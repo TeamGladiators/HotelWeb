@@ -176,4 +176,36 @@ tr:hover .cut { opacity: 1; }
 	
 	}
 	
-	
+	?>
+		<header>
+			<h1>Information of Guest</h1>
+			<address >
+				<p>SUN RISE HOTEL,</p>
+				<p>Kolatoli Sea Beach<br>Coxsbazar,<br>Bangladesh.</p>
+				<p>01703493394</p>
+			</address>
+			<span><img alt="" src="assets/img/sun.png"></span>
+		</header>
+		<article>
+			<h1></h1>
+			<address >
+				
+				<p><br></p>
+				<p>Coustomer Name  : -  <?php echo $title.$Fname." ".$lname;?><br></p>
+			</address>
+			<table class="meta">
+				<tr>
+					<th><span >Customer ID</span></th>
+					<td><span ><?php echo $id; ?></span></td>
+				</tr>
+				<tr>
+					<th><span >Check in Date</span></th>
+					<td><span ><?php echo $cin_date; ?> </span></td>
+				</tr>
+				<tr>
+					<th><span >Check out Date</span></th>
+					<td><span ><?php echo $cout_date; ?> </span></td>
+				</tr>
+				
+			</table>
+			<table >
