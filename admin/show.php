@@ -229,3 +229,23 @@ tr:hover .cut { opacity: 1; }
 						<th><span >No of Days</span></th>
 						
 					</tr>
+					</thead>
+				<tbody>
+				
+					<tr>
+						<td><span ><?php echo $room_type; ?></span></td>
+						<td><span ><?php echo $nodays; ?> </span></td>
+						
+					</tr>
+					<tr>
+						<td><span ><?php echo $Bed_type; ?>  Bed </span></td>
+						<td><span ><?php echo $nodays; ?></span></td>
+						
+					</tr>
+					<tr>
+						<td><span ><?php echo $meal_type; ?>  </span></td>
+						<td><span ><?php echo $nodays; ?></span></td>
+						
+					</tr>
+				</tbody>
+			</table>
