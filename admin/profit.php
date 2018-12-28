@@ -107,5 +107,22 @@ if(!isset($_SESSION["user"]))
 				 
 				 
             <div class="row">
-			
+			<?php 
+				//index.php
+				//$connect = mysqli_connect("localhost", "root", "", "hotel");
+				include('db.php');
+				
+					
+					$query = "SELECT * FROM payment";
+					$result = mysqli_query($con, $query);
+					$chart_data = '';
+					$tot = '';
+					while($row = mysqli_fetch_array($result))
+					{
+					 $chart_data .= "{ date:'".$row["cout"]."', profit:".$row["fintot"] *10/100 ."}, ";
+					 $tot = $tot + $row["fintot"] *10/100;
+					}
+					$chart_data = substr($chart_data, 0, -2);
+				
+?>
 				
