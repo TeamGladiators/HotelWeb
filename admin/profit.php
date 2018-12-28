@@ -202,13 +202,7 @@ else
 													<td>".$row['cout']."</td>
 													
 													
-													<td>$".$row['ttot']."</td>
-													<td>$".$row['mepr']."</td>
-													<td>$".$row['btot']."</td>
-													<td>$".$row['fintot']."</td>
-													<td>$".$row['fintot']*10/100 ."</td>
-													</tr>";
-											
+													
 											}
 										
 										}
