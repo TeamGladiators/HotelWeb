@@ -154,5 +154,26 @@ tr:hover .cut { opacity: 1; }
 	include ('db.php');
 
 	$pid = $_GET['sid'];
+	$sql ="select * from roombook where id = '$pid' ";
+	$re = mysqli_query($con,$sql);
+	while($row=mysqli_fetch_array($re))
+	{
+		$id = $row['id'];
+		$title =  $row['Title'];
+		$Fname = $row['FName'];
+		$lname = $row['LName'];
+		$email = $row['Email'];
+		$National = $row['National'];
+		$country = $row['Country'];
+		$phone = $row['Phone'];
+		$room_type = $row['TRoom'];
+		$Bed_type = $row['Bed'];
+		//$Noof_room = $row['Nroom'];
+		$meal_type = $row['Meal'];
+		$cin_date = $row['cin'];
+		$cout_date = $row['cout'];
+		$nodays = $row['nodays'];
+	
+	}
 	
 	
