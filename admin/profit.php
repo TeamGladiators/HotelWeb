@@ -198,3 +198,8 @@ else
 												echo"<tr class='gradeU'>
 													<td>".$row['id']." </td>
 													<td>".$row['title']." ".$row['fname']." ".$row['lname']."</td>
+else
+											{
+												echo"<tr class='gradeU'>
+													<td>".$row['id']." </td>
+													<td>".$row['title']." ".$row['fname']." ".$row['lname']."</td>
